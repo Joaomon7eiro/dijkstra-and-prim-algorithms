@@ -117,7 +117,7 @@ class Graph:
             next_city = ''
             for new_city, value in accumulated_distances.items():
 
-                if new_city == city or expanded[new_city] is True:
+                if expanded[new_city] is True:
                     continue
 
                 if value < min_value:
