@@ -88,10 +88,9 @@ class Graph:
         previous = {}
 
         print("CIDADES:", self.graph.keys())
-        origin = 'GARCA'
-        destiny = 'CAMPINAS'
-        # origin = input("Digite a cidade de origem:")
-        # destiny = input("Digite a cidade de destino:")
+
+        origin = (input("Digite a cidade de origem:")).upper()
+        destiny = (input("Digite a cidade de destino:")).upper()
 
         accumulated_distances[origin] = 0
 
